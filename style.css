@@ -1,0 +1,34 @@
+
+body {
+  margin: 0px;
+  background-color: black;
+  font-family: Helvetica Neue, Helvetica;
+  color: white; }
+  body a {
+    color: orange;
+    text-decoration: none; }
+    body a:hover {
+      color: yellow; }
+  body .content {
+    background: url("gitrdone.png") no-repeat top right;
+    margin: 0 0 0 auto;
+    padding-left: 50px; }
+    body .content h1 {
+      font-weight: normal;
+      padding: 25px 0 0 0;
+      margin: 0px;
+      font-size: 130px; }
+    body .content h2 {
+      font-weight: lighter;
+      margin-top: -10px;
+      font-size: 40px;
+      color: orange;
+    }
+    body .content p {
+      font-size: 17px;
+      margin: 5px 0 10px 10px;
+      padding: 0px; }
+
+      .container {
+        display: grid;
+      }
