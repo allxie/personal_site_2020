@@ -8,27 +8,50 @@ body {
     color: orange;
     text-decoration: none; }
     body a:hover {
-      color: yellow; }
+      color:rgb(255, 204, 110);
+    }
   body .content {
-    background: url("gitrdone.png") no-repeat top right;
+    background: url("profilepic.png") no-repeat 115% 20%;
+    background-size: 800px;
     margin: 0 0 0 auto;
-    padding-left: 50px; }
+    /* padding-left: 50px; */
+  }
+    body .header {
+      margin-left: 20px;
+    }
+
     body .content h1 {
       font-weight: normal;
       padding: 25px 0 0 0;
       margin: 0px;
-      font-size: 130px; }
+      font-size: 130px; 
+    }
     body .content h2 {
       font-weight: lighter;
       margin-top: -10px;
       font-size: 40px;
       color: orange;
     }
-    body .content p {
-      font-size: 17px;
-      margin: 5px 0 10px 10px;
-      padding: 0px; }
 
+    p{
+      margin: 0px 0px 10px 0px;
+    }
       .container {
         display: grid;
+        grid-template-columns: 600px 60px 700px;
+        grid-gap: 10px;
+      }
+
+      .date {
+        text-align: center;
+        font-size: 20px;
+        color: orange;
+      }
+      .left {
+        font-size: 17px;
+        text-align: right;
+        color: #b9b9b9;
+      }
+      .right {
+        font-size: 17px;
       }
