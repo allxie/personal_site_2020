@@ -11,7 +11,7 @@ body {
       color:rgb(255, 204, 110);
     }
   body .content {
-    background: url("profilepic.png") no-repeat 115% 20%;
+    background: url("assets/profilepic.png") no-repeat 115% 20%;
     background-size: 800px;
     margin: 0 0 0 auto;
     /* padding-left: 50px; */
