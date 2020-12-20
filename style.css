@@ -12,35 +12,6 @@ body a:hover {
   color: rgb(255, 204, 110);
 }
 
-@media (min-width: 1300px) {
-  #background{
-    background: url("assets/profilepic.png") no-repeat 115% 20%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-
-  #profile-pic{
-    display: none;
-  }
-}
-
-@media (max-width: 1299px) {
-  #profile-pic{
-    display: flex;
-    justify-content: center;
-  }
-
-  #profile-pic>img {
-    max-width: 420px;
-    width: 60%;
-    height: auto;
-  }
-}
-
 body .header {
   margin-left: 20px;
 }
@@ -51,6 +22,7 @@ body .content h1 {
   margin: 0px;
   font-size: 130px;
 }
+
 body .content h2 {
   font-weight: lighter;
   margin-top: -10px;
@@ -86,4 +58,51 @@ p {
 }
 .right {
   font-size: 17px;
+}
+
+/* big screens */
+@media (min-width: 1300px) {
+  #background{
+    background: url("assets/profilepic.png") no-repeat 115% 20%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  #profile-pic{
+    display: none;
+  }
+}
+
+/* medium-small screens */
+@media (max-width: 1299px) {
+  #profile-pic{
+    display: flex;
+    justify-content: center;
+  }
+
+  #profile-pic>img {
+    max-width: 420px;
+    width: 60%;
+    height: auto;
+  }
+
+  body .content h1 {
+    font-size: 100px;
+  }
+}
+
+/* smol */
+@media (max-width: 580px) {
+  body .content h1 {
+    font-size: 60px;
+  }
+
+  body .content h2 {
+    font-size: 40px;
+    margin-top: 0px;
+  }
 }
