@@ -70,7 +70,7 @@ p {
   grid-gap: 10px;
   grid-auto-rows: auto;
   max-width: 1000px;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
   margin-top: 20px;
 }
 
