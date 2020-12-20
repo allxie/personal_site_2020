@@ -1,57 +1,89 @@
-
 body {
   margin: 0px;
   background-color: black;
   font-family: Helvetica Neue, Helvetica;
-  color: white; }
-  body a {
-    color: orange;
-    text-decoration: none; }
-    body a:hover {
-      color:rgb(255, 204, 110);
-    }
-  body .content {
+  color: white;
+}
+body a {
+  color: orange;
+  text-decoration: none;
+}
+body a:hover {
+  color: rgb(255, 204, 110);
+}
+
+@media (min-width: 1300px) {
+  #background{
     background: url("assets/profilepic.png") no-repeat 115% 20%;
-    background-size: 800px;
-    margin: 0 0 0 auto;
-    /* padding-left: 50px; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
   }
-    body .header {
-      margin-left: 20px;
-    }
 
-    body .content h1 {
-      font-weight: normal;
-      padding: 25px 0 0 0;
-      margin: 0px;
-      font-size: 130px; 
-    }
-    body .content h2 {
-      font-weight: lighter;
-      margin-top: -10px;
-      font-size: 40px;
-      color: orange;
-    }
+  #profile-pic{
+    display: none;
+  }
+}
 
-    p{
-      margin: 0px 0px 10px 0px;
-    }
-      .container {
-        display: grid;
-        grid-template-columns: 400px 60px 700px;
-        grid-gap: 10px;
-      }
+@media (max-width: 1299px) {
+  #profile-pic{
+    display: flex;
+    justify-content: center;
+  }
 
-      .date {
-        text-align: center;
-        font-size: 20px;
-        color: orange;
-      }
-      .left {
-        font-size: 17px;
-        text-align: right;
-        color: #b9b9b9;
-      }
-      .right {
-        font-size: 17px;
-      }
+  #profile-pic>img {
+    max-width: 420px;
+    width: 60%;
+    height: auto;
+  }
+}
+
+body .header {
+  margin-left: 20px;
+}
+
+body .content h1 {
+  font-weight: normal;
+  padding: 25px 0 0 0;
+  margin: 0px;
+  font-size: 130px;
+}
+body .content h2 {
+  font-weight: lighter;
+  margin-top: -10px;
+  font-size: 40pt;
+  color: orange;
+}
+h2{
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0px 0px 10px 0px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto 2fr;
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  max-width: 1000px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.date {
+  text-align: center;
+  font-size: 20px;
+  color: orange;
+}
+.left {
+  font-size: 17px;
+  text-align: right;
+  color: #b9b9b9;
+}
+.right {
+  font-size: 17px;
+}
